@@ -1,0 +1,148 @@
+/* Estilos generales para el Navbar */
+.navbar-custom {
+  background-color: #ffffff; /* Fondo blanco para el navbar */
+  border: 2px solid #e0e0e0; /* Borde gris claro */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 15px 20px; /* Espaciado interno */
+  margin: 20px auto; /* Espaciado externo */
+  width: 90%; /* Ancho del navbar */
+  max-width: 1200px; /* Ancho máximo */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos para el Brand (título del navbar) */
+.navbar-custom .navbar-brand {
+  font-size: 1.5rem; /* Tamaño de fuente más grande */
+  font-weight: bold; /* Fuente en negrita */
+  color: #007bff; /* Color azul */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.navbar-custom .navbar-brand:hover {
+  color: #0056b3; /* Color azul más oscuro al pasar el mouse */
+}
+
+/* Estilos para los enlaces de navegación */
+.navbar-custom .nav-link {
+  font-size: 1rem; /* Tamaño de fuente estándar */
+  color: #333333; /* Color negro-gris */
+  margin: 0 15px; /* Espaciado horizontal */
+  transition: color 0.3s, transform 0.3s; /* Transiciones suaves */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.navbar-custom .nav-link:hover {
+  color: #007bff; /* Color azul al pasar el mouse */
+  transform: scale(1.05); /* Efecto de ampliación */
+}
+
+/* Espaciado entre los elementos */
+.navbar-custom .nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar-custom {
+      flex-direction: column; /* Cambiar a columna */
+      text-align: center;
+      padding: 10px;
+  }
+
+  .navbar-custom .nav {
+      flex-direction: column; /* Cambiar a columna los enlaces */
+      margin-top: 10px;
+  }
+
+  .navbar-custom .nav-link {
+      margin: 5px 0; /* Ajustar el espaciado vertical */
+  }
+}
+/* Contenedor principal del formulario */
+.contact-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Título del formulario */
+.contact-container h2 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Estilo del formulario */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Grupos de formulario */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Etiquetas */
+.form-group label {
+  font-weight: bold;
+  color: #555555;
+  margin-bottom: 5px;
+}
+
+/* Campos de entrada */
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efectos al enfocar los campos */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* Botón de enviar */
+.btn-submit {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Pie de página */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777777;
+}
+
